@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklibrary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Bo-Notes 📚🔲📘</h1>
+    </div>
+    <div class="two">
+    <button>All notes</button> <button>Remarks</button> <button>History</button> <button><img src="file-management.png"></button>
+</div>
+    <div class="container">
+        <div class="book-container">
+        <h1>Michael Jackson</h1>
+        <h4>King of pop</h4>
+        <br>
+        <p>Michael Jackson has been the favourite of almost everyone. His dance moves and talent in singing have attracted everyone. There are many more things to read about him. For it, we have prepared some sets of 10 lines on Michael Jackson below. You should read them right now.</p>
+        <br>
+        <button class="one" onclick="deletebook(event)">delete</button>    
+    </div>
+    </div>
+    <div class="overlay"></div>
+
+    <div class="popup-box">
+       <h2>add book</h2>
+        <form>
+            <input type="text" placeholder="book title" id="book-title-input"> 
+            <input type="text" placeholder="book author" id="book-author-input">
+            <textarea placeholder="short description" id="book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-book" onclick="click(event)">Cancel</button>
+        </form>
+    </div>
+        <button class="add-btn" onclick="addbutton(event)">+</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
