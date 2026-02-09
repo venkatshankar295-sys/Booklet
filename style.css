@@ -10,32 +10,38 @@ body {
 }
 
 .navbar {
-    background-color: red;
+    background-color: orange;
     padding: 20px;
 }
-.two{
+
+.two {
     padding: 20px;
     margin: 20px;
     gap: 30px
 }
-.two button{
+
+.two button {
     background-color: rgba(0, 0, 0, 0.582);
     color: white;
     font-size: 20px;
     border-radius: 10px;
-    padding: 5px;   
+    padding: 5px;
 }
-.two button:hover{
+
+.two button:hover {
     background-color: grey;
     transition: 0.3s;
     border: none;
 }
-.two  button img{
+
+.two button img {
     height: 30px;
     width: 30px;
 }
+
 .container {
     padding: 10px;
+    display: flex;
 }
 
 .book-container {
@@ -47,11 +53,12 @@ body {
     border-width: 10px;
     margin: 30px;
     display: inline-block;
+    vertical-align: top;
 }
 
 .book-container h1 {
-    color: red;
-}
+    color: gray;
+} 
 
 .book-container button {
     background-color: rgb(133, 105, 105);
@@ -66,7 +73,7 @@ body {
 }
 
 .add-btn {
-    background-color: brown;
+    background-color: orange;
     color: black;
     border-radius: 100%;
     padding-top: 20px;
@@ -153,6 +160,14 @@ body {
     outline: none;
 }
 
-@media (max-width:750px){
-
+@media (max-width:750px) {
+    .book-container{
+        width: 200px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .add-btn{
+        padding: 10px;
+    }
 }
