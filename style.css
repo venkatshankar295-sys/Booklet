@@ -43,7 +43,19 @@ body {
     padding: 10px;
     display: flex;
 }
-
+.container input{
+    width: 300px;
+    padding: 20px;
+    height: 10px;
+    background-color: rgb(233, 220, 220);
+    color: black;
+    border-radius: 5px;
+    border-width: 2px;
+    cursor: pointer;
+}
+.container placeholder{
+    color: black;
+}
 .book-container {
     background-color: black;
     color: white;

@@ -54,9 +54,6 @@ addbook.addEventListener("click", function (event) {
         return;
     }
 
-    // Generate a unique timestamp ID for the new book
-    const bookId = Date.now().toString();
-
     // 1. Render visually onto screen
     displayBook(booktitleinput.value, bookauthorinput.value, bookdescriptioninput.value, bookId);
     
@@ -81,7 +78,7 @@ addbook.addEventListener("click", function (event) {
 function deletebook(event) {
     var bookDiv = event.target.parentElement;
     var bookId = bookDiv.getAttribute("data-id");
-    
+
     // Remove from array and update local database
     savedBooks = savedBooks.filter(book => book.id !== bookId);
     localStorage.setItem("myBooklet", JSON.stringify(savedBooks));
